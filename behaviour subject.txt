@@ -1,0 +1,12 @@
+service
+
+ resp1= new BehaviorSubject([]);
+    getCart=this.resp1.asObservable();
+
+
+component
+this.service.resp1.next(resp);
+              this.service.getCart.subscribe(resp=>{
+                console.log(resp,"vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
+              })
+
